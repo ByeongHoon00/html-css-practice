@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 자식노드 자동완성 기능 : > 사용 (ex : div>rl>li)-->
+    <div>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- 형제노드 자동완성 기능 : + 사용 (ex : div>ul+ol+div)-->
+    <div>
+      <ul></ul>
+      <ol></ol>
+      <div></div>
+    </div>
+
+    <!-- 특정태그 반복하기 : * 사용 (ex : div>ul>li*3)-->
+    <div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!-- 아이디를 갖는 태그 자동생성: # 사용 (ex : span#item, #item)-->
+    <span id="item"></span>
+    <div id="item"></div>
+
+    <!-- 클래스 속성을 갖는 태그 자동완성 : . 사용 (ex : span.title, .title)-->
+    <span class="title"></span>
+    <div class="title"></div>
+
+    <!-- 콘텐츠를 자동으로 넣는 emmet : {} 사용 (ex : p.container{Hello World~!})-->
+    <p class="container">Hello World~!</p>
+
+    <!-- 자동 넘버링 : $ 사용 (ex : p.container{item$}*5)-->
+    <p class="comtainer">item1</p>
+    <p class="comtainer">item2</p>
+    <p class="comtainer">item3</p>
+    <p class="comtainer">item4</p>
+    <p class="comtainer">item5</p>
+  </body>
+</html>
